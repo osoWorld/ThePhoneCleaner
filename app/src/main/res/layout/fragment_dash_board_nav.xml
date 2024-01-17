@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerlayoutid"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.DashBoardNavFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:background="@color/blue"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/toggledrawerID"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:src="@drawable/sort_24_icon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="PHONE CLEANER"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/toggledrawerID"
+                    app:layout_constraintStart_toEndOf="@+id/toggledrawerID"
+                    app:layout_constraintTop_toTopOf="@+id/toggledrawerID" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+
+                    android:background="@drawable/bg_grid"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/toggledrawerID">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="320dp"
+                        android:background="@drawable/outline_bg"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                            android:id="@+id/rAmrogressID"
+                            android:layout_width="127dp"
+                            android:layout_height="127dp"
+                            android:layout_marginTop="45dp"
+                            app:cpb_round_border="true"
+
+                            app:cpb_progress_direction="to_right"
+                            app:cpb_background_progressbar_color="#DFF8FF"
+                            app:cpb_background_progressbar_width="11dp"
+                            app:cpb_progress_max="100"
+                            app:cpb_progressbar_color="#48D6FF"
+                            app:cpb_progressbar_width="11dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                            android:id="@+id/romrogressID"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginTop="45dp"
+                            app:cpb_round_border="true"
+                            app:cpb_progress_direction="to_right"
+                            app:cpb_background_progressbar_color="#B7D8FF"
+                            app:cpb_background_progressbar_width="14dp"
+                            app:cpb_progress_max="100"
+                            app:cpb_progressbar_color="@color/blue"
+                            app:cpb_progressbar_width="14dp"
+
+                            app:layout_constraintBottom_toBottomOf="@+id/rAmrogressID"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="105dp"
+                            android:layout_height="105dp"
+                            android:src="@drawable/circular_m"
+                            app:layout_constraintBottom_toBottomOf="@+id/rAmrogressID"
+                            app:layout_constraintEnd_toEndOf="@+id/rAmrogressID"
+                            app:layout_constraintStart_toStartOf="@+id/rAmrogressID"
+                            app:layout_constraintTop_toTopOf="@+id/rAmrogressID" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="17dp"
+                                        android:layout_height="17dp"
+                                        android:layout_marginRight="3dp"
+                                        android:background="@drawable/constraints_bg"
+                                        app:layout_constraintBottom_toBottomOf="@+id/scanTextViewram"
+                                        app:layout_constraintEnd_toStartOf="@+id/scanTextViewram"
+                                        app:layout_constraintTop_toTopOf="@+id/scanTextViewram" />
+
+                                    <TextView
+                                        android:id="@+id/scanTextViewram"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="7dp"
+                                        android:text="48"
+                                        android:textColor="@color/white"
+                                        android:textSize="27sp"
+                                        android:textStyle="bold"
+                                        app:fontFamily="sans-serif"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="RAM USED"
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold"
+                                        app:layout_constraintEnd_toEndOf="@+id/scanTextViewram"
+                                        app:layout_constraintStart_toStartOf="@+id/scanTextViewram"
+                                        app:layout_constraintTop_toBottomOf="@+id/scanTextViewram" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="2dp"
+                                        android:text="%"
+                                        android:textColor="@color/white"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold"
+                                        app:layout_constraintBottom_toBottomOf="@+id/scanTextViewram"
+                                        app:layout_constraintStart_toEndOf="@+id/scanTextViewram"
+                                        app:layout_constraintTop_toTopOf="@+id/scanTextViewram" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                            </LinearLayout>
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <View
+                                        android:layout_width="1.9dp"
+                                        android:layout_height="50dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/shapecurve_bg"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="17dp"
+                                        android:layout_height="17dp"
+                                        android:layout_marginRight="3dp"
+                                        android:background="@drawable/rom_bg"
+                                        app:layout_constraintBottom_toBottomOf="@+id/scanTextViewrom"
+                                        app:layout_constraintEnd_toStartOf="@+id/scanTextViewrom"
+                                        app:layout_constraintTop_toTopOf="@+id/scanTextViewrom" />
+
+                                    <TextView
+                                        android:id="@+id/scanTextViewrom"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="50"
+                                        android:layout_marginBottom="7dp"
+                                        android:textColor="@color/white"
+                                        android:textSize="27sp"
+                                        android:textStyle="bold"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="ROM USED"
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold"
+                                        app:layout_constraintEnd_toEndOf="@+id/scanTextViewrom"
+                                        app:layout_constraintStart_toStartOf="@+id/scanTextViewrom"
+                                        app:layout_constraintTop_toBottomOf="@+id/scanTextViewrom" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="2dp"
+                                        android:text="%"
+                                        android:textColor="@color/white"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold"
+                                        app:layout_constraintBottom_toBottomOf="@+id/scanTextViewrom"
+                                        app:layout_constraintStart_toEndOf="@+id/scanTextViewrom"
+                                        app:layout_constraintTop_toTopOf="@+id/scanTextViewrom" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnboostnowID"
+                    android:background="@drawable/btn_gradient"
+                    android:padding="15dp"
+                    android:text="Memory Cleaner"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bg_shape_rectangle"
+            android:layout_weight="1.5">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="1dp"
+                        android:layout_margin="5dp"
+                        android:id="@+id/cardjunkcleanerID"
+
+                        android:layout_height="match_parent">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imageView7"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:src="@drawable/playmain_icon"
+                                app:tint="@color/bg_blue"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Video"
+                                android:fontFamily="@font/poppins_thin"
+                                android:textAllCaps="true"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="@+id/imageView7"
+                                app:layout_constraintStart_toStartOf="@+id/imageView7"
+                                app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        app:cardBackgroundColor="@color/white"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="1dp"
+                        android:id="@+id/viruscardID"
+                        android:layout_height="match_parent">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imageView8"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:src="@drawable/picture_icon"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:tint="@color/bg_blue" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="IMAGES"
+                                android:fontFamily="@font/poppins_thin"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="@+id/imageView8"
+                                app:layout_constraintStart_toStartOf="@+id/imageView8"
+                                app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_margin="5dp"
+                        app:cardElevation="1dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="10dp"
+                        android:id="@+id/BatteryCardID"
+                        android:layout_height="match_parent">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imageView10"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:src="@drawable/mp3_icon"
+                                app:tint="@color/bg_blue"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="AUDIO"
+                                android:fontFamily="@font/poppins_thin"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="@+id/imageView10"
+                                app:layout_constraintStart_toStartOf="@+id/imageView10"
+                                app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_viewid"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        app:headerLayout="@layout/navigation_header"
+        app:itemIconTint="#1F86FF"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/drawer_menu" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

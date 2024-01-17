@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">PhoneCleanerProject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="privacy_policy_heading">Privacy Policy</string>
+    <string name="heading_below">
+This Privacy Policy outlines how [Your App Name] collects, uses, and protects information when you use our mobile application. By downloading and using [Your App Name], you agree to the terms outlined in this policy.</string>
+
+    <string name="info_collection_details">We do not collect any personally identifiable information while using our Service. The app has access to media files (videos, images, and audio) stored on your device\'s gallery solely for the purpose of displaying and deleting them as requested by the user. We do not store, process, or transfer any media files to our servers or third parties.</string>
+    <string name="permission_details">The app requires the following permissions for its functionality:
+        \n
+        \n . Read external storage: To access and display media files from your device\'s gallery.\n
+ .Delete media files: To allow users to delete selected media files directly from the app.</string>
+    <string name="security_details">We take reasonable measures to secure your personal information and prevent unauthorized access, disclosure, alteration, or destruction.</string>
+    <string name="user_media">[Your App Name] accesses and displays media files (images, videos, and audio files) from your device\'s gallery using the scope storage permissions. These files are used solely for the purpose of displaying them within the app and allowing the user to delete them</string>
+    <string name="delete_media">When a user opts to delete a media file, the app requests permission to delete the selected item. This permission is explicitly required for the app to perform the delete operation, and no data is stored or transmitted to external servers.</string>
+    <string name="data_security">[Your App Name] takes appropriate measures to secure your personal information and media files. The app does not store any user data, and all media access and deletion operations are performed locally on the user\'s device.</string>
+    <string name="third_party">[Your App Name] does not share any user data, including media files, with third parties. The app does not have internet or server functionality, ensuring that your data remains on your device.</string>
+    <string name="user_control">The app provides users with the ability to review and delete media files from their device\'s gallery. Users have control over granting or denying permission to delete each item, ensuring a secure and personalized experience.</string>
+    <string name="change_of_policy">[Your App Name] may update this privacy policy from time to time. Users will be notified of any significant changes through the app. It is advised to review this policy periodically.</string>
+    <string name="consent_d">By using [Your App Name], you hereby consent to the terms of this Privacy Policy.</string>
+
+</resources>

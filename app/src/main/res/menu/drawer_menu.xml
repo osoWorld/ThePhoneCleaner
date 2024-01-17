@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="RATE US"
+        android:id="@+id/rateusID"
+        app:showAsAction="never"
+        android:icon="@drawable/star_rate_24_icon">
+    </item>
+    <item android:title="SHARE"
+        android:id="@+id/shareApplinkID"
+        app:showAsAction="never"
+        android:icon="@drawable/share_24_icon">
+    </item>
+    <item android:title="PRIVACY POLICY"
+        android:id="@+id/privacyID"
+        app:showAsAction="never"
+        android:icon="@drawable/privacy_tip_24_icon">
+    </item>
+</menu>

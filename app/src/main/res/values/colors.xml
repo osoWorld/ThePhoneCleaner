@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#1F86FF</color>
+
+    <color name="blueprogess">#4DA6FF</color>
+
+    <color name="bg_blue">#2188FF</color>
+    <color name="hintColor">#C4C4C4</color>
+    <color name="defaultTextColor">#808080</color>
+    <color name="bg_color">#808080</color>
+    <color name="item_bg_color">#EFE9F4</color>
+    <color name="cyan">#FF00FFFF</color>
+</resources>
