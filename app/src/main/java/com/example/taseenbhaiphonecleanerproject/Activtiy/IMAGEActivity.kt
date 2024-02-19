@@ -211,8 +211,6 @@ class IMAGEActivity : AppCompatActivity() {
         adapterCLass.notifyDataSetChanged()
     }
 
-
-
 }
 
 
